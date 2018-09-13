@@ -1,3 +1,3 @@
 # MyAplication
-First Applicaction:
-First Layout created and onclick event on Acept Button to create an Intent with a message
+First Applicaction
+Example of a Intent from an activity to another second activity sending a message
