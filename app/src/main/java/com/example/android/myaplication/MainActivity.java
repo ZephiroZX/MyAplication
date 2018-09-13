@@ -10,21 +10,27 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.android.myaplication.MESSAGE";
 
-    private EditText txtFirstName = findViewById(R.id.txtFirstName);
-    private EditText txtLastName = findViewById(R.id.txtLastName);
-    private EditText txtEmail = findViewById(R.id.txtEmail);
-    private EditText txtPassword = findViewById(R.id.txtPassword);
+    private EditText txtFirstName;
+    private EditText txtLastName;
+    private EditText txtEmail;
+    private EditText txtPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        txtFirstName = findViewById(R.id.txtFirstName);
+        txtLastName = findViewById(R.id.txtLastName);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtPassword = findViewById(R.id.txtPassword);
     }
 
     // Accept Button to
     public void aceptAccion(View view){
         Intent intent = new Intent(this, SecondActivity.class);
-        String message = R.string.str_welcome + " " + txtFirstName.getText().toString() + " " + txtLastName.getText().toString();
+
+        String message = "Bienvenido " + txtFirstName.getText().toString() + " " + txtLastName.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
