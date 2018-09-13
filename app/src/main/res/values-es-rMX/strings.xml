@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAplication</string>
+    <string name="str_first_name">Nombre</string>
+    <string name="str_last_name">Apellido</string>
+    <string name="str_email">Correo</string>
+    <string name="str_password">Contraseña</string>
+    <string name="str_btn_acept">Aceptar</string>
+    <string name="str_btn_cancel">Cancelar</string>
+    <string name="str_welcome">Bienvenido</string>
+</resources>
